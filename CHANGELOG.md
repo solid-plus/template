@@ -1,5 +1,11 @@
 # @solidjs-plus/package-name
 
+## 0.0.2
+
+### Patch Changes
+
+- f49e262: fix package-name placeholder
+
 ## 0.0.1
 
 ### Patch Changes
