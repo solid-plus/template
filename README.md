@@ -2,8 +2,6 @@
 
 # @solid-plus/`<package>` [![npm Version](https://img.shields.io/npm/v/@solid-plus/<package>.svg?style=flat-square)](https://www.npmjs.org/package/@solid-plus/<package>)
 
-![@solid-plus logo](logo.svg)
-
 ## Assets
 
 To get a banner for a project, use the following url:
