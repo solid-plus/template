@@ -28,7 +28,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc && rollup --config && echo 'You may describe the change. Run `npm run changes`' && echo 'To release the package run `npm run release`'",
-    "changes": "npx changeset add --open",
+    "changes": "npx changeset add",
     "prepublishOnly": "npm run pretty && npm run build",
     "prerelease": "npm run test",
     "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",

@@ -51,6 +51,8 @@ Search and replace _**`~package-name~`**_ in this `README.md` and the `package.j
   npm run changes
   ```
 
+  If your stuck in the Vim terminal text editor type `:x` or `:exit`
+
   - Follow the release steps:
 
   ```sh
