@@ -1,14 +1,14 @@
 {
-  "name": "@solidjs-plus/~package-name~",
+  "name": "@solidjs-plus/package-name",
   "description": "",
   "author": "Sylvain Dethier",
   "contributors": [],
   "version": "0.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/solidjs-plus/~package-name~#readme",
+  "homepage": "https://github.com/solidjs-plus/package-name#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/solidjs-plus/~package-name~"
+    "url": "https://github.com/solidjs-plus/package-name"
   },
   "publishConfig": {
     "access": "public"

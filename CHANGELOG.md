@@ -1,4 +1,4 @@
-# @solidjs-plus/~package-name~
+# @solidjs-plus/package-name
 
 ## 0.0.1
 
