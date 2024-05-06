@@ -1,14 +1,14 @@
 {
-  "name": "@solidjs-plus/package",
+  "name": "@solidjs-plus/~package-name~",
   "description": "",
   "author": "Sylvain Dethier",
   "contributors": [],
   "version": "0.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/solidjs-plus/package#readme",
+  "homepage": "https://github.com/solidjs-plus/~package-name~#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/solidjs-plus/package"
+    "url": "https://github.com/solidjs-plus/~package-name~"
   },
   "publishConfig": {
     "access": "public"
@@ -27,16 +27,16 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsc && rollup --config && echo 'You may describe the change. Run `npm changeset add --open`' && echo 'To release the package run `npm run release`'",
+    "build": "tsc && rollup --config && echo 'You may describe the change. Run `npm run changes`' && echo 'To release the package run `npm run release`'",
+    "changes": "npx changeset add --open",
     "prepublishOnly": "npm run pretty && npm run build",
     "prerelease": "npm run test",
-    "release": "npm changeset && npm changeset status && npm changeset version && npm run changeset publish && git push --follow-tags",
+    "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",
     "test": "vitest run && npm run test:types && npm run coverage",
-    "test:watch": "vitest",
-    "test:ui": "vitest --ui",
     "test:types": "tsc --project tsconfig.test.json && vitest run --typecheck",
+    "test:watch": "vitest",
+    "test:ui": "vitest --typecheck --coverage --ui",
     "coverage": "vitest run --coverage",
-    "coverage:ui": "vitest --coverage --ui",
     "pretty": "prettier --write \"{src,test}/**/*.{ts,tsx}\""
   },
   "devDependencies": {
