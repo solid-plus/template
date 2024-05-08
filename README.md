@@ -15,7 +15,8 @@ If you want another type of background, you can choose between `tiles` and `bloc
 ## Get started to build for the `@solidjs-plus` community
 
 Clone this repository. Once done don't forget to _**set your package name**_.
-Search and replace _**`package-name`**_ in this `README.md` and the `package.json` files.
+Search and replace _**`package-name`**_ in this `README.md`
+and the `package.json` files.
 
 ## NPM scripts
 
@@ -31,7 +32,8 @@ Search and replace _**`package-name`**_ in this `README.md` and the `package.jso
   npm run test:watch
   ```
 
-- To run the test and have more friendly interface (will open a browser tab with the tests results)
+- To run the test and have more friendly interface.
+  This will open a browser tab with the tests results:
 
   ```sh
   npm run test:ui
