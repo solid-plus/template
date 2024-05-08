@@ -35,7 +35,7 @@
     "test": "vitest run && npm run test:types && npm run coverage",
     "test:types": "tsc --project tsconfig.test.json && vitest run --typecheck",
     "test:watch": "vitest",
-    "test:ui": "vitest --typecheck --coverage --ui",
+    "test:ui": "vitest run --ui",
     "coverage": "vitest run --coverage",
     "pretty": "prettier --write \"{src,test}/**/*.{ts,tsx}\""
   },
@@ -55,6 +55,7 @@
     "babel-preset-solid": "^1.8.17",
     "eslint": "8.57.0",
     "eslint-plugin-solid": "^0.14.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^24.0.0",
     "prettier": "^2.8.8",

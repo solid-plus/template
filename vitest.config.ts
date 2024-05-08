@@ -2,6 +2,7 @@
 /// <reference types="vite/client" />
 
 import { defineConfig } from "vite";
+import { coverageConfigDefaults } from "vitest/config";
 import solidPlugin from "vite-plugin-solid";
 import eslint from "vite-plugin-eslint";
 
@@ -18,6 +19,10 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    testTransformMode: { web: ["/.[jt]sx?$/"] }
+    testTransformMode: { web: ["/.[jt]sx?$/"] },
+    coverage: {
+      // ./index.(js|jsx|ts|tsx) is barrel file
+      exclude: ["*/index.[jt]s?(x)", ...coverageConfigDefaults.exclude]
+    }
   }
 });
